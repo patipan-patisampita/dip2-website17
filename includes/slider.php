@@ -1,6 +1,5 @@
 <div class="container shadow-lg mt-3 p-2 bg-body rounded">
     <div class="shadow-sm p-2 mb-1 rounded">
-
         <div class="row">
             <div class="col-md-12">
                 <div class="card-text text-center ">
@@ -17,7 +16,6 @@
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     </div>
                     <div class="carousel-inner">
-
                         <div class="carousel-item active">
                             <img src="images/slider1.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
@@ -25,7 +23,6 @@
                                 <p>Some representative placeholder content for the first slide.</p>
                             </div>
                         </div>
-
                         <div class="carousel-item">
                             <img src="images/slider2.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
@@ -33,7 +30,6 @@
                                 <p>Some representative placeholder content for the second slide.</p>
                             </div>
                         </div>
-
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -46,5 +42,14 @@
                 </div>
             </div>
         </div>
+
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <div class="card-text text-center ">
+                    <h4><span class="text-dark">“เทคนิคตราดโฉมใหม่ ใส่ใจบุตรหลาน จัดการศึกษา เพื่อการมีงานทำ”</span></h4>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
