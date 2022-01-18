@@ -14,28 +14,30 @@
                     <a class="nav-link" href="#">เกี่ยวกับเรา</a>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        เมนู
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">ข้อมูลส่วนตัว</a></li>
-                        <li><a class="dropdown-item" href="#">ระบบจัดการ</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">ออกจากระบบ</a></li>
-                    </ul>
-                </li>
+                <?php if (isset($_SESSION['auth_user'])) : ?>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <?php echo $_SESSION['auth_user'] ['user_name']; ?>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">ข้อมูลส่วนตัว</a></li>
+                            <li><a class="dropdown-item" href="#">ระบบจัดการ</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="logout.php">ออกจากระบบ</a></li>
+                        </ul>
+                    </li>
+                <?php else : ?>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="login.php">Login</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php">Login</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="register.php">Register</a>
-                </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.php">Register</a>
+                    </li>
+                <?php endif; ?>
             </ul>
 
         </div>

@@ -2,6 +2,7 @@
     <div class="shadow-sm p-2 mb-1 rounded">
         <div class="row">
             <div class="col-md-12">
+            <?php include("message.php");?>
                 <div class="card-text text-center ">
                     <h3><span class="text-danger">“ข่าวประชาสัมพันธ์</span> <span class="text-success">วท.ตราด”</span></h3>
                 </div>
