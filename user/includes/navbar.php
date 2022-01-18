@@ -25,7 +25,11 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="logout.php">ออกจากระบบ</a></li>
+                            <li>
+                                <form action="allcode.php" method="post">
+                                    <button type="submit" name="logout_btn" class="dropdown-item">ออกจากระบบ</button>
+                                </form>
+                                
                         </ul>
                     </li>
                 <?php else : ?>
