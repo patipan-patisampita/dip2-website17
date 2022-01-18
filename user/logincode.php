@@ -26,7 +26,7 @@
             ];
             if($_SESSION['auth_role'] == '1'){ 
                 $_SESSION['message'] = "ยินดีเข้าสู่ผู้ดูแลระบบ"; //1=admin
-                header("Location: admin/index.php");
+                header("Location: ../admin/index.php");
                 exit(0);
             }
             elseif($_SESSION['auth_role'] == '2'){
