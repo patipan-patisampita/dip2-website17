@@ -10,9 +10,13 @@
                     <a class="nav-link active" aria-current="page" href="index.php">หน้าแรก</a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link" href="#">เกี่ยวกับเรา</a>
+                </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    เกี่ยวกับเรา
+                        เมนู
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">ข้อมูลส่วนตัว</a></li>
@@ -25,7 +29,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="user/login.php">Blog</a>
+                    <a class="nav-link" href="login.php">Login</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="register.php">Register</a>
                 </li>
 
             </ul>
