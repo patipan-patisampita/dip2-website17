@@ -14,6 +14,10 @@
                     <a class="nav-link" href="#">เกี่ยวกับเรา</a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.php" target="_blank">ทั่วไป</a>
+                </li>
+
                 <?php if (isset($_SESSION['auth_user'])) : ?>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
