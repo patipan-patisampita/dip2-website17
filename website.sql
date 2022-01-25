@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 25, 2022 at 07:28 AM
+-- Generation Time: Jan 25, 2022 at 10:57 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -20,6 +20,24 @@ SET time_zone = "+00:00";
 --
 -- Database: `website`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hotnews`
+--
+
+CREATE TABLE `hotnews` (
+  `id` int(11) NOT NULL,
+  `head` text COLLATE utf8_unicode_ci NOT NULL,
+  `detail` text COLLATE utf8_unicode_ci NOT NULL,
+  `date` text COLLATE utf8_unicode_ci NOT NULL,
+  `namepic` text COLLATE utf8_unicode_ci NOT NULL,
+  `namedoc` text COLLATE utf8_unicode_ci NOT NULL,
+  `hotcount` int(11) NOT NULL,
+  `design` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `time` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -53,6 +71,12 @@ INSERT INTO `users` (`id`, `fname`, `lname`, `password`, `email`, `role_as`, `st
 --
 
 --
+-- Indexes for table `hotnews`
+--
+ALTER TABLE `hotnews`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -61,6 +85,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `hotnews`
+--
+ALTER TABLE `hotnews`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`
