@@ -1,3 +1,4 @@
+<?php include("security.php"); ?>
 <?php include("includes/header.php"); ?>
 <?php include("includes/sidebar.php"); ?>
 <?php include("includes/topbar.php"); ?>
@@ -69,35 +70,32 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-
-                    <form action="news_code.php" method="post" enctype="multipart/form-data">
+                    <form action="news_code.php" method="POST" enctype="multipart/form-data">
                         <div class="modal-body">
                             <div class="form-group">
                                 <label>หัวข้อข่าว</label>
-                                <input type="text" name="head" class="form-control" placeholder="เพิ่ม-หัวข้อข่าวสาร">
+                                <textarea rows="2" cols="100" name="head" class="form-control" placeholder="เพิ่ม-หัวข้อข่าว"></textarea>
                             </div>
 
                             <div class="form-group">
                                 <label>รายละเอียดข่าว</label>
-                                <input type="text" name="detial" class="form-control" placeholder="เพิ่ม-รายละเอียดข่าว">
+                                <textarea rows="4" cols="100" name="detail" class="form-control" placeholder="เพิ่ม-รายละเอียดข่าว"></textarea>
                             </div>
 
                             <div class="form-group">
                                 <label>รายละเอียดข่าว: เช่น *.jpg,png</label>
-                                <input type="file" name="hotnew_image" class="form-control" placeholder="เพิ่ม-รายละเอียดข่าว">
+                                <input type="file" name="hotnew_image" class="form-control" placeholder="เพิ่มรูปภาพ">
                             </div>
-
 
                             <div class="form-group">
                                 <label>แนบไฟล์: เช่น *.pdf,doc,xls,ppt,rar</label>
-                                <input type="file" name="hotnew_doc" class="form-control" placeholder="เพิ่ม-แนบไฟล์">
+                                <input type="file" name="hotnew_doc" class="form-control" placeholder="แนบไฟล์">
                             </div>
-
                         </div>
 
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" name="news_save" class="btn btn-primary">Save changes</button>
+                            <button type="submit" name="news_save" class="btn btn-primary">Save</button>
                         </div>
                     </form>
 

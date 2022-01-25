@@ -5,31 +5,32 @@
 <?php
 if (isset($_POST['news_save'])) {
     $head = $_POST['head'];
-    $detial = $_POST['detial'];
-    $hotnew_image = $_FILES['hotnew_image']['name'];
-    $hotnew_doc = $_FILES['hotnew_doc']['name'];
-    if (file_exists("upload/hotnew_images/" . $_FILES['hotnew_image']['name'])) {
-        $store = $_FILES['hotnew_image']['name'];
-        $_SESSION['status'] = "กรุณาเพิ่มรูปภาพ'.$store.'";
+    $detail = $_POST['detail'];
+    $namepic = $_FILES["hotnew_image"]['name'];
+    $namedoc = $_FILES['hotnew_doc']['name'];
+    if (file_exists("upload/hotnew_images/" . $_FILES["hotnew_image"]["name"])) {
+        $store = $_FILES["hotnew_image"]["name"];
+        $_SESSION['status'] = "กรุณาเพิ่มรูปภาพ'.$store.' ";
+        echo "กรุณาเพิ่มรูปภาพ";
         header('Location: news1.php');
     } else {
-        $design = "ผู้ดูแลระบบ";
+        $design = "ผู้ดูแลระบบ-วท.ตราด";
         $hotcount = 0;
-        $query = "INSERT INTO hotnews(head,detail,date,namepic,namedoc,hotcount,design)
-                VALUES('$head','$detial','$date','$hotnew_image','$hotnew_doc','$hotcount','$design' ";
+        $query = "INSERT INTO hotnews(head,detail,date,namepic,namedoc,hotcount,design) 
+            VALUES('$head','$detail','$date','$namepic','$namedoc','$hotcount','$design')";
         $result = mysqli_query($con, $query);
+
         if ($result) {
-            move_uploaded_file($_FILES['hotnew_image']['tmp_name'], "upload/hotnew_images/" . $_FILES['hotnew_image']['name']);
-            move_uploaded_file($_FILES['hotnew_doc']['tmp_name'], "upload/hotnew_docs/" . $_FILES['hotnew_doc']['name']);
-            $_SESSION['status'] = "เพิ่มข่าวสารเรียบร้อย";
+            move_uploaded_file($_FILES["hotnew_image"]["tmp_name"], "upload/hotnew_images/" . $_FILES["hotnew_image"]["name"]);
+            move_uploaded_file($_FILES["hotnew_doc"]["tmp_name"], "upload/hotnew_docs/" . $_FILES["hotnew_doc"]["name"]);
+            $_SESSION['success'] = "เพิ่มข่าวสารเรียบร้อยแล้ว";
+            echo "เพิ่มข่าวสารเรียบร้อยแล้ว";
             header('Location: news1.php');
         } else {
-            $_SESSION['status'] = "เพิ่มข่าวสารไม่เรียบร้อย";
+            $_SESSION['success'] = "เพิ่มข่าวสารยังไม่เรียบร้อยแล้ว";
+            echo "เพิ่มข่าวสารยังไม่เรียบร้อยแล้ว";
             header('Location: news1.php');
         }
     }
-} else {
-    $_SESSION['status'] = "เพิ่มข่าวสารไม่เรียบร้อย";
-    header('Location: news1.php');
 }
 ?>
