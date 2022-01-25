@@ -63,8 +63,8 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">ข่าวประชาสัมพันธ์:</h6>
                         <a class="collapse-item" href="news1.php">ข่าวประชาสัมพันธ์ 1</a>
-                        <a class="collapse-item" href="news2.php">ข่าวประชาสัมพันธ์ 2</a>
-                        <a class="collapse-item" href="news2.php">ข่าวประชาสัมพันธ์ 3</a>
+                        <a class="collapse-item" href="news2.php">สไลด์ข่าว</a>
+                        <a class="collapse-item" href="news2.php">ภาพกิจกรรม</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
                         <a class="collapse-item" href="kij1.php">ภาพกิจกรรม1</a>
