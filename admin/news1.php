@@ -13,7 +13,7 @@
 
         <div class="card shadow rounded ">
             <div class="card-header ">
-                <h6 class="card-title font-weight-bold text-primary">ข่าวประชาสัมพันธ์ 1 &nbsp;
+                <h6 class="card-title font-weight-bold text-primary">ข่าวประชาสัมพันธ์ 1a &nbsp;
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addAdminNews">
                         เพิ่ม ข่าวประชาสัมพันธ์
