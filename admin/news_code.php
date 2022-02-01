@@ -34,3 +34,30 @@ if (isset($_POST['news_save'])) {
     }
 }
 ?>
+
+<?php
+if (isset($_POST['news_update'])) {
+    $id =  $_POST['updateting_id'];
+    $head =  $_POST['edit_head'];
+    $detail =  $_POST['edit_detail'];
+    $namepic =  $_FILES['hotnew_image']['name'];
+
+    if ($namepic <> "") {
+        if ($namepic != "") {
+            $query = "UPDATE hotnews SET head='$head',detail='$detail',namepic='$namepic' WHERE id='$id' ";
+            $result = mysqli_query($con, $query);
+            move_uploaded_file($_FILES["hotnew_image"]["tmp_name"], "upload/hotnew_images/" . $_FILES["hotnew_image"]["name"]);
+            $_SESSION['success'] = "แก้ไขข้อมูลเรียบร้อยแล้ว";
+            header('Location: news1.php');
+        }
+    } elseif ($namepic == "") {
+        $query = "UPDATE hotnews SET head='$head',detail='$detail' WHERE id='$id' ";
+        $_SESSION['success'] = "แก้ไขข้อมูลเรียบร้อยแล้ว";
+        $result = mysqli_query($con, $query);
+        header('Location: news1.php');
+    } else {
+        $_SESSION['status'] = "แก้ไขข้อมูลไม่เรียบร้อยแล้ว";
+        header('refresh:0; url=news1.php');
+    }
+}
+?>
