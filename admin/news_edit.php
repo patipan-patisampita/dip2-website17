@@ -22,10 +22,10 @@
         
             <form action="news_code.php" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="updateting_id" value="<?php echo $row['id']; ?>">
-                
+
                 <div class="form-group">
                     <label>หัวข้อข่าว</label>
-                    <input type="text" name="edit_head" value="<?php echo $row['head']; ?>" class="form-control">
+                    <textarea name="edit_head" cols="20" rows="2" class="form-control"><?php echo $row['head']; ?></textarea>
                 </div>
 
                 <div class="form-group">
