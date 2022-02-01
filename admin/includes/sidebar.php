@@ -29,8 +29,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>เกี่ยวกับระบบ</span>
                 </a>
@@ -54,8 +53,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>เกี่ยวกับข่าวประชาสัมพันธ์</span>
                 </a>
@@ -75,10 +73,12 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="../index.php" target="_blank">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
+                    <span class="text-white">First Page</span></a>
             </li>
+
+            
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
@@ -95,19 +95,21 @@
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
 
+
+            
+
             <!-- Sidebar Message -->
             <div class="sidebar-card d-none d-lg-flex">
                 <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
+                
                 <p class="text-center mb-2"><strong>ผู้ดูแลระบบ </strong>วท.ตราด</p>
 
             </div>
 
         </ul>
         <!-- End of Sidebar -->
-                <!-- Content Wrapper -->
-                <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
 
-<!-- Main Content -->
-<div id="content">
-
-
+            <!-- Main Content -->
+            <div id="content">
