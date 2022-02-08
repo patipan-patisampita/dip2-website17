@@ -19,6 +19,7 @@
             }
             $_SESSION['auth'] = true;
             $_SESSION['auth_role'] = "$role_as"; //1=admin
+            $_SESSION['user_name'] = $user_name; 
             $_SESSION['auth_user'] = [
                 'user_id'=>$user_id,
                 'user_name'=>$user_name,
