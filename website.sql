@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 25, 2022 at 10:57 AM
+-- Generation Time: Feb 08, 2022 at 07:21 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -38,6 +38,14 @@ CREATE TABLE `hotnews` (
   `design` text COLLATE utf8_unicode_ci DEFAULT NULL,
   `time` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `hotnews`
+--
+
+INSERT INTO `hotnews` (`id`, `head`, `detail`, `date`, `namepic`, `namedoc`, `hotcount`, `design`, `time`) VALUES
+(1, 'ประกาศวิทยาลัยเทคนิคตราด เรื่องสุจริต โปร่งใส วิทยาลัยเทคนิคตราดใสสะอาด 2565”', 'ประกาศวิทยาลัยเทคนิคตราด เรื่องสุจริต โปร่งใส วิทยาลัยเทคนิคตราดใสสะอาด 2565” และ “งดรับ งดให้” ของขวัญ ของกำนัลทุกชนิดจากการปฏิบัติหน้าที่ (No Gift Policy)', '25 มกราคม 2565', 'pngegg.png', 'IT-EAF2.pdf', 0, 'ผู้ดูแลระบบ-วท.ตราด', '2022-01-25 10:03:00'),
+(2, 'วิทยาลัยเทคนิคตราด ขยายเวลาการจัดการเรียนการสอนในรูปแบบออนไลน์ Online ประจำภาคเรียนที่ 2 ปีการศึกษา 2564', 'ขยายเวลาการจัดการเรียนการสอนในรูปแบบออนไลน์ Online ในสถานการณ์การแพร่ระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Covid-19ป ประจำภาคเรียนที่ 2 ปีการศึกษา 2564 (ฉบับที่ 4)', '25 มกราคม 2565', 'pngegg2.png', 'IT-EAF2.pdf', 0, 'ผู้ดูแลระบบ-วท.ตราด', '2022-01-25 10:32:13');
 
 -- --------------------------------------------------------
 
@@ -90,7 +98,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `hotnews`
 --
 ALTER TABLE `hotnews`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`
