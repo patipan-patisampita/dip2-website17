@@ -17,6 +17,7 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">ข้อมูลส่วนตัว</a></li>
                         <li><a class="dropdown-item" href="#">ระบบจัดการ</a></li>
+                        <li><a class="dropdown-item" href="faculty.php">ทีมงาน</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
