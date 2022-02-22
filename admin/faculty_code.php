@@ -62,7 +62,7 @@ if (isset($_POST['update_btn'])) {
 if (isset($_POST['delete_btn'])) {
     $id = $_POST['delete_id'];
     $query = "DELETE FROM faculty WHERE id='$id' ";
-    $result = mysqli_query($connection, $query);
+    $result = mysqli_query($con, $query);
 
     if ($result) {
         $_SESSION['success'] = "Faculty is Deleted";
@@ -74,7 +74,7 @@ if (isset($_POST['delete_btn'])) {
 
     $delete_image = $_POST['delete_image'];
     $query = "DELETE FROM faculty WHERE images='$delete_image' ";
-    $result = mysqli_query($connection, $query);
+    $result = mysqli_query($con, $query);
 
     if (file_exists("upload/faculty/$delete_image")) {
         unlink("upload/faculty/$delete_image");
